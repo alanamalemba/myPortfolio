@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alan Amalemba's Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./phoneStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/88d8ad7163.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="./images/logo.png" alt="" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark menu" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menu" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Alan</span><br />Amalemba From Kenya</h1>
+        </div>
+      </div>
+    </div>
+    <!--------------------- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="./images/myPic.png" alt="" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Enthusiastic and motivated Computer Science student at Egerton
+              University and an aspiring software engineer. Looking for my first
+              professional experience and an internship opportunity. Proficient
+              in JavaScript, HTML, CSS, Java and C. I have experience working
+              with object oriented programming languages such as java and
+              building websites using HTML, CSS and JavaScript . I am eager and
+              willing to learn and take on additional responsibilities
+              throughout an internship and to apply my knowledge to an
+              internship experience where I can further develop my software
+              engineering skills.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- -----SKILLS -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development <i class="fa-solid fa-code"></i> </span
+                  ><br />Web app Development
+                </li>
+                <li>
+                  <span
+                    >App Development <i class="fa-solid fa-mobile"></i> </span
+                  ><br />Building Android/iOS apps
+                </li>
+                <li>
+                  <span
+                    >UI/UX Design<i class="fa-solid fa-crop-simple"></i> </span
+                  ><br />Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+            <!-- ---------------------EXPERIENCE -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br />
+                  Co-founder of<a href="https://www.milkychild.com/">
+                    Milkychild</a
+                  >, a software solutions <br />
+                  company, responsible for launching the popular <br />
+                  Kenyan dating app,
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.milkychild.mydate&pli=1"
+                    >myDate</a
+                  >
+                </li>
+                <li>
+                  <span>2022 - Present</span><br />Actively building websites
+                  and apps on freelance
+                </li>
+                <li>
+                  <span>2020 - Present</span><br />Bachelor of Science in
+                  Computer Science <br />
+                  at Egerton University
+                </li>
+              </ul>
+            </div>
+            <!-- -----------EDUCATION -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - Present</span><br />Bachelor of Science in
+                  Computer Science <br />
+                  at Egerton University
+                </li>
+                <li>
+                  <span>2016-2019</span><br />Secondary School Education at
+                  Kakamega School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis facere nesciunt totam sint quidem inventore deleniti,
+              dicta tempore aperiam sunt suscipit, voluptas amet nostrum
+              repellendus, fugiat deserunt! Neque, illo culpa.
+            </p>
+            <a href="https://www.linkedin.com/in/alanamalemba/">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis facere nesciunt totam sint quidem inventore deleniti,
+              dicta tempore aperiam sunt suscipit, voluptas amet nostrum
+              repellendus, fugiat deserunt! Neque, illo culpa.
+            </p>
+            <a href="https://www.linkedin.com/in/alanamalemba/">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis facere nesciunt totam sint quidem inventore deleniti,
+              dicta tempore aperiam sunt suscipit, voluptas amet nostrum
+              repellendus, fugiat deserunt! Neque, illo culpa.
+            </p>
+            <a href="https://www.linkedin.com/in/alanamalemba/">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Our Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work3.png" alt="" />
+            <div class="layer">
+              <h3>myDely App</h3>
+              <p>
+                myDely will be an online B2C and C2C Social E-Commerce
+                application. Download it from playstore
+              </p>
+              <a
+                href="https://play.google.com/store/apps/developer?id=Milkychild"
+                ><i
+                  onclick="alert('COMING SOON !')"
+                  class="fa-solid fa-up-right-from-square"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work1.png" alt="" />
+            <div class="layer">
+              <h3>myDate App</h3>
+              <p>
+                myDate is an online dating and geosocial networking application.
+                Download it from playstore
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.milkychild.mydate&pli=1"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/alanamalemba/" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-- ------------------------contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <p>
+                <a href="mailto:alanlsamalemba@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i> email me</a
+                >
+              </p>
+              <p>
+                <a href="tel:+245719146076"
+                  ><i class="fa-solid fa-phone"></i> call me</a
+                >
+              </p>
+              <a href="https://wa.me/254719146076"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://github.com/alanamalemba"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.youtube.com/@AlanAmalemba"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://www.instagram.com/alanamalemba/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/alanamalemba?lang=en"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.tiktok.com/@alanamalemba"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/alanamalemba/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="./documents/alanCV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Type In Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Alan Amalemba
+          <i class="fa-solid fa-laptop-code"></i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
